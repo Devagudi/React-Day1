@@ -1,19 +1,14 @@
-
-import './App.css';
 import React from 'react';
-import FirstComponent from './Components/FirstComponent.jsx';
-import UserGreeting from './Components/UserGreeting';
-import StyledHeading from './Components/StyledHeading';
-import Layout from './Components/Layout';
+import PersonalBio from './Components/PersonalBio';
 
 function App() {
   return (
     <div>
-      <h1>Welcome to React</h1>
-      <FirstComponent />
-      <UserGreeting name="Prasanna" />
-       <StyledHeading />
-        <Layout />
+      <PersonalBio
+        name="Devagudi Prasanna"
+        age={29}
+        bio="A passionate software developer skilled in React.js and JavaScript, eager to build innovative web applications."
+      />
     </div>
   );
 }
